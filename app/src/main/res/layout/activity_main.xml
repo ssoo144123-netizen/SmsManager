@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <Spinner
+        android:id="@+id/spinnerFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="انتخاب همه"
+            android:textSize="12sp" android:onClick="onSelectAll" />
+        <Button android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="حذف"
+            android:textSize="12sp" android:onClick="onDelete" />
+        <Button android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="ذخیره"
+            android:textSize="12sp" android:onClick="onSave" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="خوانده شد"
+            android:textSize="12sp" android:onClick="onMarkRead" />
+        <Button android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="نخوانده"
+            android:textSize="12sp" android:onClick="onMarkUnread" />
+        <Button android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="تم"
+            android:textSize="12sp" android:onClick="onThemeToggle" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
