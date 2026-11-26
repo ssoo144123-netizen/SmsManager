@@ -41,9 +41,8 @@ public class MainActivity extends Activity {
     }
 
     private static final int PERM_REQ = 1;
-    private static final String[] PERMS = {
+        private static final String[] PERMS = {
             android.Manifest.permission.READ_SMS,
-            android.Manifest.permission.WRITE_SMS,
             android.Manifest.permission.SEND_SMS,
             android.Manifest.permission.RECEIVE_SMS,
             android.Manifest.permission.WRITE_EXTERNAL_STORAGE
