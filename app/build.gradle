@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.smsmanager'
+    namespace 'com.example.smspro'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.smsmanager"
+        applicationId "com.example.smspro"
         minSdk 23
         targetSdk 34
         versionCode 1
